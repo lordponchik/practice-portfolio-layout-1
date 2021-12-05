@@ -1,0 +1,15 @@
+.about-me{
+    background-color: $secondary-bg-color;
+    text-align: center;
+}
+.about-me__title{
+margin-bottom: 18px;
+
+font-weight: 700;
+font-size: 34px;
+line-height: 1.18;
+}
+
+.about-me__text:not(:last-child){
+    margin-bottom: 30px;
+}

@@ -1,0 +1,28 @@
+
+.nav{
+    @media screen and (min-width: 768px) {
+        border-bottom: 1px solid $secondary-text-color;
+    }
+ 
+}
+.nav__menu{
+    display: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+.nav__link{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: $secondary-text-color;
+    &--active{
+        color: $primary-text-color;
+    }
+    &:hover,
+    &:focus{
+        color: $primary-text-color;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.js-body-hidden {
+  overflow: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
