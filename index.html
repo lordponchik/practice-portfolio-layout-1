@@ -5,172 +5,301 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice portfolio layout 1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-  />
-  <link rel="stylesheet" href="./css/main.min.css" />
-
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="nav">
           <ul class="nav__menu list">
-            <li class="nav__list"><a href="" class="nav__link link nav__link--active">Home</a></li>
-            <li class="nav__list"><a href="" class="nav__link link">About me</a></li>
-            <li class="nav__list"><a href="" class="nav__link link">Skills</a></li>
-            <li class="nav__list"><a href="" class="nav__link link">Portfolio</a></li>
-            <li class="nav__list"><a href="" class="nav__link link">Contacts</a></li>
+            <li class="nav__list">
+              <a href="" class="nav__link link nav__link--active js-link-close">Home</a>
+            </li>
+            <li class="nav__list">
+              <a href="#about-me" class="nav__link link js-link-close">About me</a>
+            </li>
+            <li class="nav__list">
+              <a href="#skills" class="nav__link link js-link-close">Skills</a>
+            </li>
+            <li class="nav__list">
+              <a href="#portfolio" class="nav__link link js-link-close">Portfolio</a>
+            </li>
+            <li class="nav__list">
+              <a href="#footer" class="nav__link link js-link-close">Contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
-        <div class="mob-nav js-mob-nav">
-          <div class="container mob-nav__container"> <ul class="mob-nav__menu list">
-            <li class="mob-nav__list"><a href="" class="mob-nav__link link mob-nav__link--active">Home</a></li>
-            <li class="mob-nav__list"><a href="" class="mob-nav__link link">About me</a></li>
-            <li class="mob-nav__list"><a href="" class="mob-nav__link link">Skills</a></li>
-            <li class="mob-nav__list"><a href="" class="mob-nav__link link">Portfolio</a></li>
-            <li class="mob-nav__list"><a href="" class="mob-nav__link link">Contacts</a></li>
+      <div class="mob-nav js-mob-nav">
+        <div class="container mob-nav__container">
+          <ul class="mob-nav__menu list">
+            <li class="mob-nav__list">
+              <a href="" class="mob-nav__link link mob-nav__link--active">Home</a>
+            </li>
+            <li class="mob-nav__list">
+              <a href="#about-me" class="mob-nav__link link js-link-close">About me</a>
+            </li>
+            <li class="mob-nav__list">
+              <a href="#skills" class="mob-nav__link link js-link-close">Skills</a>
+            </li>
+            <li class="mob-nav__list">
+              <a href="#portfolio" class="mob-nav__link link js-link-close">Portfolio</a>
+            </li>
+            <li class="mob-nav__list">
+              <a href="#footer" class="mob-nav__link link js-link-close">Contacts</a>
+            </li>
           </ul>
-         <form action="" class="mob-lang">
-              <button type="button" class="mob-lang__btn mob-lang__btn--active "><span class="mob-lang__en">ENG</span></button>
-              <button type="button" class="mob-lang__btn"><span class="mob-lang__ru">RU</span></button>
-         </form>
+          <form class="mob-lang">
+            <button type="button" class="mob-lang__btn mob-lang__btn--active">
+              <span class="mob-lang__en">ENG</span>
+            </button>
+            <button type="button" class="mob-lang__btn">
+              <span class="mob-lang__ru">RU</span>
+            </button>
+          </form>
         </div>
-         
-        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container"> 
-          <div class="hero__container"> <div class="hero__meta">
-            
-            <h1 class="hero__title">Denis <br> Novik</h1>
-            <p class="hero__text">
-              UX | UI designer <br />
-              24 years old, Minsk
-            </p>
-            <form action="" class="lang">
-              <button type="button" class="lang__btn lang__btn--active "><span class="lang__en">ENG</span></button>
-              <button type="button" class="lang__btn"><span class="lang__ru">RU</span></button>
-            </form>
-           
-          </div>  
-          <button type="button" class="menu-btn js-open-menu">
-            <svg width="33" height="19" class="menu-btn__icon">
-              <use href="./images/sprite.svg#icon-menu" class="menu-btn__open"></use>
-              <use href="./images/sprite.svg#icon-close" class="menu-btn__close"></use>
-            </svg>
-          </button>
-        </div>
-         
-          <picture>
-              
-            <source srcset="./images/hero/denis-novik-desktop.jpg 1x, ./images/hero/denis-novik-desktop@2x.jpg 2x"  media="(min-width: 480px)"></source> 
-            <img srcset="./images/hero/denis-novik.jpg 1x, ./images/hero/denis-novik@2x.jpg 2x"
-             class="hero__img" src="./images/hero/denis-novik.jpg" alt="фото Дениса Новика">
-          </picture>
-         
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__meta">
+              <h1 class="hero__title">
+                Denis <br />
+                Novik
+              </h1>
+              <p class="hero__text">
+                UX | UI designer <br />
+                24 years old, Minsk
+              </p>
+              <form class="lang">
+                <button type="button" class="lang__btn lang__btn--active">
+                  <span class="lang__en">ENG</span>
+                </button>
+                <button type="button" class="lang__btn"><span class="lang__ru">RU</span></button>
+              </form>
+            </div>
+            <button type="button" class="menu-btn js-open-menu">
+              <svg width="33" height="19" class="menu-btn__icon">
+                <use href="./images/sprite.svg#icon-menu" class="menu-btn__open"></use>
+                <use href="./images/sprite.svg#icon-close" class="menu-btn__close"></use>
+              </svg>
+            </button>
           </div>
-         
-        
+
+          <picture>
+            <source
+              srcset="
+                ./images/hero/denis-novik-desktop.jpg    1x,
+                ./images/hero/denis-novik-desktop@2x.jpg 2x
+              "
+              media="(min-width: 480px)"
+            />
+            <img
+              srcset="./images/hero/denis-novik.jpg 1x, ./images/hero/denis-novik@2x.jpg 2x"
+              class="hero__img"
+              src="./images/hero/denis-novik.jpg"
+              alt="фото Дениса Новика"
+            />
+          </picture>
+        </div>
       </section>
-      <section class="about-me section">
-        <div class="container">  
+      <section class="about-me section" id="about-me">
+        <div class="container">
           <h2 class="about-me__title">About me</h2>
           <p class="about-me__text">
-            Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything
-            connected with it.
+            Hi, I'm Denis – UX/UI designer from Minsk. <br />
+            I'm interested in design and everything connected with it.
           </p>
-          <p class="about-me__text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-          <p class="about-me__text">Ready to implement excellent projects with wonderful people.</p></div>
-      
+          <p class="about-me__text">
+            I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+          </p>
+          <p class="about-me__text">Ready to implement excellent projects with wonderful people.</p>
+        </div>
       </section>
-      <section class="skills section">
-        <div class="container"> 
+      <section class="skills section" id="skills">
+        <div class="container">
           <h2 class="skills__title">Skills</h2>
           <p class="skills__text">I work in such programs as</p>
           <!-- Заменить изображение на svg -->
           <ul class="skills-menu list">
-            <li class="skills-menu__list"> 
-              <a href="" class="skills-menu__link link"> <div class="skills-menu__thumbs"> <svg class="skills-menu__svg" width="90" height="90">
-                <use href="./images/sprite.svg#icon-adobe-photoshop"></use>
-              </svg></div>
-             
-              <div class="skills-menu__meta"> 
-                <p class="skills-menu__title">Adobe Photoshop</p>
-                <ul class="skills-grade list">
-                <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                <li class="skills-grade__list"><svg class="skills-grade__svg"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-              </ul></div></a>
-             
-             
+            <li class="skills-menu__list">
+              <a href="" class="skills-menu__link link">
+                <div class="skills-menu__thumbs">
+                  <svg class="skills-menu__svg" width="90" height="90">
+                    <use href="./images/sprite.svg#icon-adobe-photoshop"></use>
+                  </svg>
+                </div>
+
+                <div class="skills-menu__meta">
+                  <p class="skills-menu__title">Adobe Photoshop</p>
+                  <ul class="skills-grade list">
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul></div
+              ></a>
             </li>
             <li class="skills-menu__list">
-              <a href="" class="skills-menu__link link"> <div class="skills-menu__thumbs"> <svg class="skills-menu__svg" width="90" height="90">
-                <use href="./images/sprite.svg#icon-adobe-illustrator"></use>
-              </svg></div>
-             
-              <div class="skills-menu__meta"> <p class="skills-menu__title">Adobe Illustrator</p>
-                <ul class="skills-grade list">
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                </ul></div></a>
-             
-             
+              <a href="" class="skills-menu__link link">
+                <div class="skills-menu__thumbs">
+                  <svg class="skills-menu__svg" width="90" height="90">
+                    <use href="./images/sprite.svg#icon-adobe-illustrator"></use>
+                  </svg>
+                </div>
+
+                <div class="skills-menu__meta">
+                  <p class="skills-menu__title">Adobe Illustrator</p>
+                  <ul class="skills-grade list">
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul></div
+              ></a>
             </li>
             <li class="skills-menu__list">
-              <a href="" class="skills-menu__link link">  <div class="skills-menu__thumbs"><svg class="skills-menu__svg" width="90" height="90">
-                <use href="./images/sprite.svg#icon-adobe-effects"></use>
-              </svg></div>
-              
-              <div class="skills-menu__meta"> <p class="skills-menu__title">Adobe After Effects</p>
-                <ul class="skills-grade list"> 
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                </ul></div></a>
-            
-             
+              <a href="" class="skills-menu__link link">
+                <div class="skills-menu__thumbs">
+                  <svg class="skills-menu__svg" width="90" height="90">
+                    <use href="./images/sprite.svg#icon-adobe-effects"></use>
+                  </svg>
+                </div>
+
+                <div class="skills-menu__meta">
+                  <p class="skills-menu__title">Adobe After Effects</p>
+                  <ul class="skills-grade list">
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul></div
+              ></a>
             </li>
             <li class="skills-menu__list">
-              <a href="" class="skills-menu__link link">    
-                <div class="skills-menu__thumbs"><svg class="skills-menu__svg" width="90" height="90">
-                <use href="./images/sprite.svg#icon-figma"></use>
-              </svg></div>
-              
-              <div class="skills-menu__meta"><p class="skills-menu__title">Figma</p>
-                <ul class="skills-grade list">
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg skills-grade__svg--active"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                  <li class="skills-grade__list"><svg class="skills-grade__svg"><use href="./images/sprite.svg#icon-star"></use></svg></li>
-                </ul></div></a>
-          
-              
+              <a href="" class="skills-menu__link link">
+                <div class="skills-menu__thumbs">
+                  <svg class="skills-menu__svg" width="90" height="90">
+                    <use href="./images/sprite.svg#icon-figma"></use>
+                  </svg>
+                </div>
+
+                <div class="skills-menu__meta">
+                  <p class="skills-menu__title">Figma</p>
+                  <ul class="skills-grade list">
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg skills-grade__svg--active">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="skills-grade__list">
+                      <svg class="skills-grade__svg">
+                        <use href="./images/sprite.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul></div
+              ></a>
             </li>
-          </ul></div>
-       
+          </ul>
+        </div>
       </section>
-      <section class="portfolio section">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
-           <h2 class="portfolio__title">Portfolio</h2>
+          <h2 class="portfolio__title">Portfolio</h2>
           <ul class="portfolio-menu list">
-            <li class="portfolio-menu__list"> 
-              <img class="portfolio-menu__img"
+            <li class="portfolio-menu__list">
+              <img
+                class="portfolio-menu__img"
                 src="./images/portfolio/fashion-store.jpg"
                 alt="Online fashion store"
                 width="936"
@@ -179,7 +308,8 @@
               <a href="" class="portfolio-menu__link link">Online fashion store - Homepage</a>
             </li>
             <li class="portfolio-menu__list">
-              <img class="portfolio-menu__img"
+              <img
+                class="portfolio-menu__img"
                 src="./images/portfolio/reebok-store.jpg"
                 alt="Reebok Store"
                 width="936"
@@ -188,7 +318,8 @@
               <a href="" class="portfolio-menu__link link">Reebok Store - Concept</a>
             </li>
             <li class="portfolio-menu__list">
-              <img class="portfolio-menu__img"
+              <img
+                class="portfolio-menu__img"
                 src="./images/portfolio/braun-store.jpg"
                 alt="Braun Landing Page"
                 width="936"
@@ -196,39 +327,47 @@
               />
               <a href="" class="portfolio-menu__link link">Braun Landing Page - Concept</a>
             </li>
-          </ul></div>
-       
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer section">
-    <div class="container"> 
-       <h2 class="footer__title">Contacts</h2>
-      <p class="footer__text">Want to know more or just chat? You are welcome!</p>
-      <button type="button" class="footer__send-btn">Send message</button>
-      <ul class="social-menu list">
-        
-        <li class="social-menu__list"><a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer">
-          <svg class="social-menu__icon">
-          <use href="./images/sprite.svg#icon-linkedin"></use> 
-        </svg>
-      </a></li>
-        <li class="social-menu__list">
-          <a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer"><svg class="social-menu__icon">
-            <use href="./images/sprite.svg#icon-instagram"></use> 
-          </svg></a>
-        </li>
-        <li class="social-menu__list"><a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer"><svg class="social-menu__icon">
-          <use href="./images/sprite.svg#icon-behance"></use> 
-        </svg></a></li>
-        <li class="social-menu__list"><a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer"><svg class="social-menu__icon">
-          <use href="./images/sprite.svg#icon-dribble"></use> 
-        </svg></a></li>
-      </ul>
-      <p class="footer__text-request">
-        Like me on <br />
-        LinkedIn, Instagram, Behance, Dribble
-      </p></div>      
-    
+    <footer class="footer section" id="footer">
+      <div class="container">
+        <h2 class="footer__title">Contacts</h2>
+        <p class="footer__text">Want to know more or just chat? You are welcome!</p>
+        <button type="button" class="footer__send-btn">Send message</button>
+        <ul class="social-menu list">
+          <li class="social-menu__list">
+            <a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-menu__icon">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-menu__list">
+            <a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer"
+              ><svg class="social-menu__icon">
+                <use href="./images/sprite.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="social-menu__list">
+            <a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer"
+              ><svg class="social-menu__icon">
+                <use href="./images/sprite.svg#icon-behance"></use></svg
+            ></a>
+          </li>
+          <li class="social-menu__list">
+            <a href="" class="social-menu__link" target="_blank" rel="noopener noreferrer"
+              ><svg class="social-menu__icon">
+                <use href="./images/sprite.svg#icon-dribble"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <p class="footer__text-request">
+          Like me on <br />
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
     </footer>
     <script src="./js/mob-menu.js" type="module"></script>
   </body>
