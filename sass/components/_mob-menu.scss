@@ -45,6 +45,7 @@
     color: $primary-text-color;
   }
 }
+
 .mob-lang {
   margin-left: auto;
   display: none;
@@ -98,4 +99,26 @@
 .mob-lang__ru {
   transform: rotate(90deg);
   display: inline-flex;
+}
+.menu-btn {
+  display: block;
+  border-style: none;
+  background-color: transparent;
+  z-index: 99;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.js-open-menu.open  {
+    opacity: 0;
+  }
+.js-close-menu{
+  opacity: 0;
+  
+  margin-left: auto;
+}
+.js-close-menu.open{
+  opacity: 1;
+
 }

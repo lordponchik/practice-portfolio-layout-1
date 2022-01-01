@@ -164,30 +164,6 @@ img {
   display: inline-flex;
 }
 
-.menu-btn {
-  display: block;
-  border-style: none;
-  background-color: transparent;
-  z-index: 99;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-}
-
-.menu-btn__close {
-  opacity: 0;
-}
-
-.js-open-menu.open .menu-btn__close {
-  opacity: 1;
-}
-.js-open-menu.open .menu-btn__open {
-  opacity: 0;
-}
-
 .about-me {
   background-color: #f6f6f6;
   text-align: center;
@@ -509,4 +485,30 @@ img {
 .mob-lang__ru {
   transform: rotate(90deg);
   display: inline-flex;
+}
+
+.menu-btn {
+  display: block;
+  border-style: none;
+  background-color: transparent;
+  z-index: 99;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.js-open-menu.open {
+  opacity: 0;
+}
+
+.js-close-menu {
+  opacity: 0;
+  margin-left: auto;
+}
+
+.js-close-menu.open {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

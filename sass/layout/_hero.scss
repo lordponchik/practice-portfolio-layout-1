@@ -76,24 +76,4 @@
   display: inline-flex;
 }
 
-.menu-btn {
-  display: block;
-  border-style: none;
-  background-color: transparent;
-  z-index: 99;
-  cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.menu-btn__close {
-  opacity: 0;
-}
-.js-open-menu.open {
-  .menu-btn__close {
-    opacity: 1;
-  }
-  .menu-btn__open {
-    opacity: 0;
-  }
-}
+
